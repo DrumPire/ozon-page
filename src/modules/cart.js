@@ -1,18 +1,18 @@
 const cart = () => {
-  const cartBtn = document.getElementById("cart"),
-    cartModal = document.querySelector(".cart"),
-    cartCloseBtn = cartModal.querySelector(".cart-close");
+    const cartBtn = document.getElementById('cart')
+    const cartModal = document.querySelector('.cart')
+    const cartCloseBtn = cartModal.querySelector('.cart-close')
 
-  const openCart = () => {
-    cartModal.style.display = "flex";
-  };
+    const openCart = () => {
+        cartModal.style.display = 'flex'
+    }
 
-  const closeCart = () => {
-    cartModal.style.display = "";
-  };
+    const closeCart = () => {
+        cartModal.style.display = ''
+    }
 
-  cartBtn.addEventListener("click", openCart);
-  cartCloseBtn.addEventListener("click", closeCart);
-};
+    cartBtn.addEventListener('click', openCart)
+    cartCloseBtn.addEventListener('click', closeCart)
+}
 
-export default cart;
+export default cart
